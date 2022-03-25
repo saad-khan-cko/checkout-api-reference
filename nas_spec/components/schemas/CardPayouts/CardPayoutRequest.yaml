@@ -5,6 +5,7 @@ required:
   - destination
   - currency
   - instruction
+  - processing_channel_id
 properties:
   source:
     type: object

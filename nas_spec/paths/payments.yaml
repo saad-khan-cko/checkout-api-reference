@@ -125,6 +125,7 @@ post:
                 source_of_funds: 'debit'
               instruction:
                 funds_transfer_type: 'AA'
+              processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
           Card Payout - Direct Funds Disbursement:
             value:
               source:
@@ -140,6 +141,7 @@ post:
               currency: GBP
               instruction:
                 funds_transfer_type: 'OG'
+              processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
           Card Payout - Third-Party Funds Disbursement:
             value:
               source:
@@ -167,6 +169,7 @@ post:
                 source_of_funds: 'debit'
               instruction:
                 funds_transfer_type: 'FD'
+              processing_channel_id: 'pc_hpswyyx23geezflc2ocz3exn4y'
          
   responses:
     '201':
