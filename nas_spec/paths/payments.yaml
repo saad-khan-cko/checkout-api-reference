@@ -133,7 +133,7 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
               destination:
                 type: 'id'
-                token: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
+                id: 'src_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
                   company_name: 'Checkout.com'
@@ -149,7 +149,7 @@ post:
                 id: 'ca_y3oqhf46pyzuxjbcn2giaqnb44'
               destination:
                 type: 'token'
-                id: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
+                token: 'tok_y3oqhf46pyzuxjbcn2giaqnb44'
                 account_holder:
                   type: 'corporate'
                   company_name: 'Checkout.com'
