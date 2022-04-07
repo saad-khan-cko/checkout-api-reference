@@ -40,13 +40,6 @@ properties:
     type: string
     description: A reference you can later use to identify this payout, such as an order number
     maxLength: 50
-  billing_descriptor:
-    type: object
-    description: The dynamic billing descriptor displayed on the account owner's statement
-    properties:
-      reference:
-        type: string
-        description: The reference that should be shown on the statement
   sender:
     $ref: '#/components/schemas/CardPayoutRequestSender'
   instruction:
