@@ -1,0 +1,21 @@
+type: object
+required:
+  - shipping_recipient
+  - shipping_address
+properties:
+  shipping_recipient:
+    type: string
+    description: name of the recipient
+    minLength: 1
+    maxLength: 256
+    example: john kennedy
+  shipping_address: 
+    $ref: '#/components/schemas/IssuingAddress'
+    description : the address to which the physical card is to be sent
+  additional_comment:
+    type: string
+    maxLength: 256
+    minLength: 1
+
+
+  
