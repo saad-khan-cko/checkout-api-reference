@@ -1,5 +1,5 @@
 type: object
-description: Use the processing object to influence or override the data sent during card processing
+description: Use the processing object to influence or override the data sent during payment processing
 properties:
   # mid:
   #   type: string
@@ -12,6 +12,7 @@ properties:
   aft:
     type: boolean
     description: Indicates whether the payment is an [Account Funding Transaction](https://docs.checkout.com/four/payments/manage-payments/account-funding-transactions)
+<<<<<<< HEAD
   preferred_scheme:
     type: Enum
     enum:
@@ -20,6 +21,21 @@ properties:
       - "cartes_bancaires"
     description: The preferred scheme for co-badged card payment processing. If using 3rd party Authentication before requesting the payment, set the value to the scheme that authenticated the transaction.
   # dlocal:
+=======
+  tax_amount:
+    type: integer
+    description: | 
+      The tax amount.
+      The amount must be provided in the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>. 
+    minimum: 0
+  shipping_amount:
+    type: integer
+    description: | 
+      The shipping amount.
+      The amount must be provided in the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>. 
+    minimum: 0
+# dlocal:
+>>>>>>> a72bb7b0e1d4c3ead3e36dd56dc06acf2a28235a
   #   type: object
   #   description: Processing information required for dLocal payments.
   #   properties:

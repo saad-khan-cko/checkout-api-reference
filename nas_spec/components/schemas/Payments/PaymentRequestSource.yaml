@@ -7,6 +7,7 @@ discriminator:
     id: '#/components/schemas/02_PaymentRequestIdSource'
     card: '#/components/schemas/03_PaymentRequestCardSource'
     network_token: '#/components/schemas/04_PaymentRequestNetworkTokenSource'
+    tamara: '#/components/schemas/06_PaymentRequestReverseApiSource'
     provider_token: '#/components/schemas/07_PaymentRequestProviderTokenSource'
     alipay_hk: '#/components/schemas/PaymentRequestAlipayPlusSource'
     alipay_cn: '#/components/schemas/PaymentRequestAlipayPlusSource'

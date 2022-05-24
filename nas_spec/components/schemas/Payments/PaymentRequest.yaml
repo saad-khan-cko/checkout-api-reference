@@ -7,7 +7,7 @@ properties:
   amount:
     type: integer
     description: |
-      The payment amount. Omit the amount or provide a value of `0` to perform a card verification.       
+      The payment amount. Omit the amount or provide a value of `0` to perform a card verification. Required if `source.type` is `tamara`
 
       The amount must be provided in the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>.
     minimum: 0
@@ -96,13 +96,13 @@ properties:
   success_url:
     type: string
     format: uri
-    description: For redirect payment methods, this overrides the default success redirect URL configured on your account
+    description: For redirect payment methods, this overrides the default success redirect URL configured on your account.
     maxLength: 1024
     example: 'http://example.com/payments/success'
   failure_url:
     type: string
     format: uri
-    description: For redirect payment methods, this overrides the default failure redirect URL configured on your account
+    description: For redirect payment methods, this overrides the default failure redirect URL configured on your account.
     maxLength: 1024
     example: 'http://example.com/payments/fail'
   payment_ip:
@@ -118,7 +118,11 @@ properties:
   processing:
     $ref: '#/components/schemas/ProcessingSettings'
   items:
+<<<<<<< HEAD
     $ref: '#/components/schemas/Items'
+=======
+    $ref: '#/components/schemas/Products'
+>>>>>>> a72bb7b0e1d4c3ead3e36dd56dc06acf2a28235a
   metadata:
     type: object
     description: Allows you to store additional information about a transaction with custom fields and up to five user-defined fields (`udf1` to `udf5`), which can be used for reporting purposes. `udf1` is also used for some of our risk rules. **Note** that this object only allows one level of depth, so cannot accept non-primitive data types such as objects or arrays.

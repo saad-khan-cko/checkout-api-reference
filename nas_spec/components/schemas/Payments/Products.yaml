@@ -1,0 +1,53 @@
+type: array
+description: The order line items. Required if `source.type` is `tamara`
+items:
+  type: object
+  description: The order line item or product that is being purchased. Required if `source.type` is `tamara`
+  properties:
+    name:
+      type: string
+      description: The descriptive name of the line item. Required if `source.type` is `tamara`
+      example: Kevlar batterang
+      maxLength: 255
+    quantity:
+      type: integer
+      description: The number of line items. Required if `source.type` is `tamara`
+      minimum: 1
+      example: 2
+    unit_price:
+      type: integer
+      description: The unit price of the item the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>. Required if `source.type` is `tamara`
+      minimum: 0
+      example: 50
+    reference:
+      type: string
+      description: The item reference or product SKU (stock-keeping unit). Required if `source.type` is `tamara`
+      example: 858818ac
+      maxLength: 255
+    image_url:
+      type: string
+      format: uri
+      description: The link to the picture of the line item (should be a valid URL)
+      maxLength: 1024
+      example: http://example.com/batterang.jpg
+    url:
+      type: string
+      format: uri
+      description: The link to the line items product page (should be a valid URL)
+      maxLength: 1024
+      example: http://example.com/batterang
+    total_amount:
+      type: integer
+      description: The total cost of items (Including any tax and discount amount) the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>
+      minimum: 0
+      example: 100
+    tax_amount:
+      type: integer
+      description: The tax amount of the item the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>
+      minimum: 0
+      example: 10
+    discount_amount:
+      type: integer
+      description: The discount amount of the item the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>
+      minimum: 0
+      example: 5
