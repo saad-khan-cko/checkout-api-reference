@@ -1,5 +1,5 @@
 ﻿type: object
-description: The source of the authentication. Using a `network_token` will return `501 Not Implemented`.
+description: The source of the authentication.
 discriminator:
   propertyName: type
   mapping:
@@ -31,3 +31,8 @@ properties:
     description: The cardholder's work phone number
     allOf:
       - $ref: '#/components/schemas/SessionPhone'
+  email:
+    type: string
+    description: The email of the cardholder
+    maxLength: 254
+    example: 'bruce.wayne@email.com'

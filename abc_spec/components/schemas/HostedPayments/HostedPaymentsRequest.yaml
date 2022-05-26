@@ -125,6 +125,7 @@ properties:
     description: >
       Use to specify which <a href="https://www.checkout.com/docs/payments/payment-methods" target="_blank">payment methods</a> should render on the page. <a href="https://checkout.com/docs/integrate/hosted-payments-page/manage-your-hosted-payments-page#Alternative_payment_methods" target="_blank">Check the requirements for each payment method</a>
     enum:
+      - card
       - sofort
       - klarna
       - paypal
@@ -137,8 +138,7 @@ properties:
       - p24
       - multibanco
     example:
-      - klarna
-      - knet
+      - card
   products:
     type: array
     description: Details about the products in the order
@@ -193,24 +193,40 @@ properties:
     additionalProperties: true
   locale:
     type: string
-    description: Creates a translated version of the page in the specified language
+    description: Creates a translated version of the page in the specified language. For Klarna payments, <a href="https://www.checkout.com/docs/integrate/hosted-payments-page/manage-your-hosted-payments-page#Alternative_payment_methods" target="_blank">read our documentation about expected parameters for certain locales</a>.
     enum:
+      - ar
+      - da-DK
+      - de-CH
       - de-DE
+      - en-AT
+      - en-CH
+      - en-DE
+      - en-DK
       - en-GB
-      - fr-FR
-      - it-IT
-      - nl-NL
+      - en-FI
+      - en-NL
+      - en-NO
+      - en-SE
       - es-ES
-      - zh-HK
-      - zh-TW
-      - zh-CN
-      - ja-JP
+      - fi-FI
       - fil-PH
+      - fr-CH
+      - fr-FR
+      - hi-IN
       - id-ID
+      - it-CH
+      - it-IT
+      - ja-JP
       - ms-MY
+      - nb-NO
+      - nl-NL
+      - sv-SE
       - th-TH
       - vi-VN
-      - hi-IN
+      - zh-CN
+      - zh-HK
+      - zh-TW
     default: en-GB
   3ds:
     type: object
@@ -226,6 +242,15 @@ properties:
         description: Determines whether to attempt a 3D Secure payment as non-3D Secure should the card issuer not be enrolled
         default: false
         example: false
+      challenge_indicator:
+        type: string
+        description: Indicates the preference for whether or not a 3DS challenge should be performed. The customer’s bank has the final say on whether or not the customer receives the challenge.
+        enum:
+            - no_preference
+            - no_challenge_requested
+            - challenge_requested
+            - challenge_requested_mandate
+        default: no_preference
   capture:
     type: boolean
     description: Whether to capture the payment (if applicable).

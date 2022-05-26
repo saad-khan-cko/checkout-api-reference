@@ -138,14 +138,15 @@ namespace OpenApiGenerator
       foreach (var file in yamlPathFiles)
       {
         var fileInfo = new FileInfo(file);
-        var path = "";
-
+        var path = ""; 
+       
         using (StreamReader sr = new StreamReader(file))
         {
           path = fileInfo.Name.Substring(0, fileInfo.Name.IndexOf(".")).Replace("@", "/");
           path = new Regex(@"^_.+").Replace(path, "");
+  
           text += ($"  /{path}:\n");
-
+    
           var s = "";
           var currentVerb = "";
           while ((s = sr.ReadLine()) != null)
