@@ -46,8 +46,8 @@ properties:
         maxLength: 25
       state:
         type: string
-        description: The sender's address state
-        maxLength: 3
+        description: The two-letter ISO US state code of the sender address. Mandatory only when sender.address.country = US
+        maxLength: 2
         minLength: 2
       zip:
         type: string

@@ -11,6 +11,7 @@ properties:
     description: The sender's company name
   address:
     type: object
+    description: Mandatory for Money Transfer and Third-Party use cases
     required:
       - address_line1
       - address_line2
@@ -32,8 +33,8 @@ properties:
         maxLength: 25
       state:
         type: string
-        description: The sender's address state
-        maxLength: 3
+        description: The two-letter ISO US state code of the sender address. Mandatory only when sender.address.country = US
+        maxLength: 2
         minLength: 2
       zip:
         type: string
