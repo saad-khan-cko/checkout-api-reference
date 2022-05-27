@@ -1,5 +1,4 @@
 type: object
-description: The source of the payout
 required: 
   - source
   - destination
