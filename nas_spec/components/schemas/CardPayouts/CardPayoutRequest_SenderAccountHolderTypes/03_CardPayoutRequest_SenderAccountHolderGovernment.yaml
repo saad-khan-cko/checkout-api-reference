@@ -11,7 +11,7 @@ properties:
     description: The sender's company name
   address:
     type: object
-    description: Mandatory for Money Transfer and Third-Party use cases
+    description: Mandatory for and Third-Party use cases
     required:
       - address_line1
       - address_line2

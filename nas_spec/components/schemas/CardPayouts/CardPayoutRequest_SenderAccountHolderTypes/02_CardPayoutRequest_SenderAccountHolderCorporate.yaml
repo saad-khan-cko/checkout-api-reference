@@ -15,7 +15,7 @@ properties:
     maxLength: 35
   address:
     type: object
-    description: Mandatory for Money Transfer and Third-Party use cases
+    description: Mandatory for Third-Party use cases
     required:
       - address_line1
       - address_line2
