@@ -197,7 +197,7 @@ get:
       schema:
         type: string
       required: true
-      description: A reference (such as an order ID) that you can use later to identify the payment. Previously known as `TrackId`
+      description: A reference (such as an order ID) that you can use later to identify the payment.
   responses:
     '200':
       description: Payments retrieved successfully
