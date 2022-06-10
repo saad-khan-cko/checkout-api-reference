@@ -1,4 +1,4 @@
 {
 	"trailingSlash": true,
-	"redirects": [{ "source": "/test/", "destination": "/" }]
+	"redirects": [{ "source": "/test/", "destination": "/index.html" }]
 }
