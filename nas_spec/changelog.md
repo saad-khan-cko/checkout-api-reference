@@ -2,6 +2,7 @@
 
 | Date       | Description of change                                                                                                 |
 |------------|-----------------------------------------------------------------------------------------------------------------------|
+| 2022/06/13 | Added the `3ds.allow_upgrade` to payment requests & `3ds.upgrade_reason` to the 202 accepted & GET endpoint responses |
 | 2022/06/01 | Marketplace API renamed to Accounts API                                                                               |
 | 2022/05/23 | Added Alipay Plus NAS structure                                                                                       |
 | 2022/05/19 | Added WeChat Pay NAS structure                                                                                        |
