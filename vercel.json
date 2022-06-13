@@ -1,4 +1,4 @@
 {
 	"trailingSlash": true,
-	"redirects": [{ "source": "/test/", "destination": "/index.html" }]
+	"redirects": [{ "source": "/test", "destination": "/index.html/", "statusCode": 301 }]
 }
