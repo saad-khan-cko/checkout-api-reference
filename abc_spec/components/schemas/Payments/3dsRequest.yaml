@@ -51,3 +51,9 @@ properties:
       - challenge_requested
       - challenge_requested_mandate
     default: no_preference
+  allow_upgrade:
+    type: boolean
+    description: Whether to process this payment as a 3D Secure payment if the authorization was soft declined
+    default: false
+    example: true
+

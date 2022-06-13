@@ -41,3 +41,7 @@ properties:
     type: string
     description: Specifies an exemption reason so that the payment is not processed using 3D Secure authentication
     example: 'low_value'
+  upgrade_reason:
+    type: string
+    description: Indicates the reason why the payment was upgraded to a 3D secure payment (when `allow_upgrade` is specified)
+    example: sca_retry
