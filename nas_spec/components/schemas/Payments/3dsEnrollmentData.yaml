@@ -14,5 +14,5 @@ properties:
     example: Y
   upgrade_reason:
     type: string
-    description: Indicates the reason why the payment was upgraded to a 3D secure payment (when `allow_upgrade` is specified)
+    description: Indicates the reason why the payment was upgraded to 3D secure (when `allow_upgrade` is set to true)
     example: sca_retry

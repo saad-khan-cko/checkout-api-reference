@@ -101,6 +101,6 @@ properties:
     description: The algorithm used by the Issuer ACS to calculate the Authentication cryptogram. This is the AVALGO data returned in Cartes bancaires Authentication.
   allow_upgrade:
     type: boolean
-    description: Whether to process this payment as a 3D Secure payment if the authorization was soft declined due to 3DS authentication required
+    description: Whether to process this payment as 3D Secure if the authorization was soft declined due to 3DS authentication required
     default: false
     example: true
