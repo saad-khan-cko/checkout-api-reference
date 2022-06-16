@@ -1,4 +1,4 @@
-@import './index.css';
+@import './previous/index.css';
 
 .dark {
 	--logo-crusoe: url('./favicons/white-logo.svg');
