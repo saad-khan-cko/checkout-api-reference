@@ -5,9 +5,9 @@ var Path = require('path');
 require('shelljs/global');
 set('-e');
 
-mkdir('-p', 'web_deploy/');
+mkdir('-p', 'web_deploy/previous');
 
-cp('-R', 'web/*', 'web_deploy/previous');
+cp('-R', 'web/*', 'web_deploy/');
 
 exec('dotnet build src/OpenApiGenerator/OpenApiGenerator.csproj');
 exec(`ASPNETCORE_ENVIRONMENT=${process.env.ACCOUNT} dotnet run -p src/OpenApiGenerator/OpenApiGenerator.csproj`);
