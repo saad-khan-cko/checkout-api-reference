@@ -361,16 +361,8 @@ a {
 	}
 }
 
-.banner-support,
-.banner-previous {
+.banner-text {
 	display: inline-block;
-}
-
-@media screen and (max-width: 1024px) {
-	.banner-support,
-	.banner-previous {
-		display: block;
-	}
 }
 
 .banner-link {
@@ -410,7 +402,7 @@ a {
 	}
 }
 
-@media screen and (max-width: 857px) {
+@media screen and (max-width: 655px) {
 	.redoc-wrap {
 		top: 112px;
 	}
