@@ -282,6 +282,8 @@ img.sc-kafWEX.hZCbNs {
 	content: var(--logo) !important;
 }
 
+/* footer styles */
+
 .showFooter {
 	display: flex !important;
 	height: 0px;
@@ -329,6 +331,58 @@ img.sc-kafWEX.hZCbNs {
 	color: var(--primary-text) !important;
 }
 
+/* Hyperlinks color */
+
+a {
+	color: var(--primary-text) !important;
+	font-weight: 600;
+}
+/* banner styles */
+
+.banner {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 64px;
+	background-color: var(--primary-dark-blue);
+	color: var(--cko-white);
+	z-index: 111;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+	.banner {
+		font-size: 12px;
+		line-height: 20px;
+		padding: 12px 24px;
+	}
+}
+
+.banner-support,
+.banner-previous {
+	display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+	.banner-support,
+	.banner-previous {
+		display: block;
+	}
+}
+
+.banner-link {
+	display: inline-block;
+	color: var(--cko-white) !important;
+	font-weight: 400 !important;
+}
+
+.banner-link:hover {
+	color: var(--cko-white) !important;
+}
+
 .onetrust-button {
 	background: none !important;
 	border: none !important;
@@ -338,11 +392,44 @@ img.sc-kafWEX.hZCbNs {
 	color: var(--primary-text) !important;
 }
 
-/* Hyperlinks color */
+.redoc-wrap {
+	top: 64px;
+}
 
-a {
-	color: var(--primary-text) !important;
-	font-weight: 600;
+.menu-content {
+	top: 64px !important;
+}
+
+@media screen and (max-width: 1163px) {
+	.redoc-wrap {
+		top: 88px;
+	}
+
+	.menu-content {
+		top: 88px !important;
+	}
+}
+
+@media screen and (max-width: 857px) {
+	.redoc-wrap {
+		top: 112px;
+	}
+
+	.menu-content {
+		top: 112px !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.redoc-wrap {
+		top: 84px;
+	}
+}
+
+@media screen and (max-width: 359px) {
+	.redoc-wrap {
+		top: 104px;
+	}
 }
 
 /* Redocly upgrade */
