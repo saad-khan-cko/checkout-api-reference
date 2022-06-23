@@ -40,7 +40,13 @@ properties:
       - low_value
       - secure_corporate_payment
       - trusted_listing
+      - trusted_listing_prompt
       - transaction_risk_assessment
+      - 3ds_outage
+      - sca_delegation
+      - out_of_sca_scope
+      - other
+      - low_risk_program
     example: 'low_value'
   challenge_indicator:
     type: string
