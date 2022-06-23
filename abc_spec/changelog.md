@@ -1,7 +1,8 @@
 # Changelog
 
 | Date       | Description of change                                                                                           |
-| ---------- | --------------------------------------------------------------------------------------------------------------- |
+|------------| --------------------------------------------------------------------------------------------------------------- |
+| 2022/06/23 | Added 3ds2.2 exemptions                                                                                         |
 | 2022/05/11 | Added Arabic locale option to Hosted Payments Page and Payment Links.                                           |
 | 2022/05/10 | Added `3ds.challenge_indicator` to Hosted Payments Page and Payment Links.                                      |
 | 2022/04/27 | Added Scandinavian locale options to Hosted Payments Page and Payment Links.                                    |
