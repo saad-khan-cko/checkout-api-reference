@@ -39,6 +39,7 @@ properties:
       - low_value
       - secure_corporate_payment
       - trusted_listing
+      - trusted_listing_prompt
       - transaction_risk_assessment
       - 3ds_outage
       - sca_delegation
