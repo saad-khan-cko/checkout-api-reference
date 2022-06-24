@@ -2,7 +2,7 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/preview/crusoe",
+      "source": "/preview/crusoe/",
       "destination": "/",
       "statusCode": 301
     }
